@@ -125,11 +125,14 @@
     .quote-grid{
       display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:34px;
     }
+
+    
     .quote{
-      background:var(--white);border:1px solid var(--line);border-radius:15px;
+      background:var(--white);border:1px solid var(--line);border-radius:17px;
       padding:22px 24px;font-size:18px;font-weight:700;
       box-shadow:0 5px 18px rgba(16,37,64,.035);
     }
+
     .quote strong{color:var(--blue)}
 
     .principles{
@@ -174,19 +177,60 @@
     .anna-box p{color:var(--muted)}
     .anna-box.darkbox p{color:#c7d4e3}
     .big-line{
-      font-size:clamp(27px,3.4vw,43px);line-height:1.1;
+      font-size:clamp(27px,3.4vw,40px);line-height:1.1;
       letter-spacing:-.04em;font-weight:800;margin:10px 0 14px;
     }
 
     .offer{
-      display:grid;grid-template-columns:1.18fr .82fr;gap:30px;align-items:stretch;
+      display:grid;grid-template-columns:0.92fr .82fr;gap:20px;align-items:stretch;
     }
+
+    
     .offer-box{
-      background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+      background:var(--white);border:2px solid var(--line);border-radius:var(--radius);
       padding:32px;box-shadow:var(--shadow);
     }
-    .offer-price{font-size:58px;line-height:1;font-weight:900;letter-spacing:-.05em;margin:4px 0 8px;color:var(--navy)}
-    .offer-meta{color:var(--muted);margin-bottom:24px;font-weight:650}
+
+.offer-box > * {
+  margin-bottom: 16px; /* Adds space between all direct children */
+}
+
+
+.peak-label {
+  margin: 18px 0 22px;
+}
+
+.peak-label strong {
+  display: block;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+}
+
+.peak-label span {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.peak-label span:last-child {
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.offer-box > *:last-child {
+  margin-bottom: 0; /* Remove margin from last item */
+}
+
+.offer-box ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+
+   
+    .offer-price{font-size:58px;line-height:1;font-weight:900;letter-spacing:-.05em;margin:4px 0 8px;color:var(--blue)}
+    .offer-meta{color:var(--muted);margin-bottom:14px;font-weight:650}
     ul{padding-left:21px}
     li{margin:9px 0}
 
@@ -295,6 +339,10 @@ section:has(h2:first-child) .good-look-inner {
 }
 </style>
 
+
+
+
+
 </head>
 
 <body>
@@ -307,6 +355,7 @@ section:has(h2:first-child) .good-look-inner {
   <nav class="navlinks" aria-label="Main navigation">
     <a href="#how">How it works</a>
     <a href="#offer">€8k start</a>
+    <a href="#approach">New approach</a>
     <a href="#cases">Examples</a>
     <a href="#contact">How can we help?</a>
   </nav>
@@ -317,17 +366,23 @@ section:has(h2:first-child) .good-look-inner {
 <section class="hero">
   <div class="wrap hero-content">
     <span class="eyebrow">Fast · Practical · Honest</span>
-    <h1>See progress. <span class="blue">Improve what matters.</span></h1>
-    <p class="lead">
-      We help teams solve practical business problems quickly — working directly with the people doing the job,
+
+    <div class="peak-label">
+  <strong>PEAK</strong>
+  <span>Practical Execution &amp; Acceleration Kit</span>
+  <span>10 days · €8k · one focused business problem</span>
+</div>
+
+    <h1>Get progress. <span class="blue" >Improve what matters.</span></h1>
+    <p class="lead" style= "line-height: 1.4;">
+      We fix the operational bottleneck your IT  doesn't have time for. <br>Working directly with the people doing the job,
       building something useful, and improving it together.
     </p>
 
 
 
-  <div style="font-size:25px;font-weight:850;color:var(--blue);">
-    MILOS FILDER
-  </div>
+
+ 
 
 
     <div style="margin:22px 0 26px;line-height:1.55;">
@@ -336,8 +391,7 @@ section:has(h2:first-child) .good-look-inner {
       </div>
 
         <div style="font-size:14px;font-weight:650;color:var(--muted);margin-top:4px;">
-    Computer Science + Economics · Kearney · 70+ projects · Independent consultant
-    · <a href="https://www.linkedin.com/in/milos-fidler-2b859b2b/" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:none;">LinkedIn →</a>
+    Computer Science + Economics · ex-Kearney · 70+ projects · Independent consultant</a>
   </div>
 
       <div style="font-size:16px;font-weight:750;color:var(--text);margin-top:4px;">
@@ -351,31 +405,538 @@ section:has(h2:first-child) .good-look-inner {
       <a class="btn primary" data-tally-link href="#contact"><span>How can we help you? →</span></a>
       <a class="btn secondary" href="#offer">See the €8k start</a>
     </div>
-    <div class="price">Take action now · 10 working days · €8,000 starting engagement</div>
+    <div class="price">PEAK = Practical Execution & Acceleration Kit <br>10 days · €8k · one focused business problem</div>
   </div>
 </section>
 
 <section class="section blue-bg">
   <div class="wrap">
-    <h2>Does this sound familiar?</h2>
+    <h2>Your problems matter</h2>
+
+
+
     <p class="section-intro">
-      The problem is real. The people doing the work know it. But getting practical help is harder than it should be.
+      The problem is real. The people doing the work know it. <br> But getting practical help is harder than it should be.
     </p>
+
+
     <div class="quote-grid">
-      <div class="quote">“<strong>IT is not prioritising our issue.</strong>”</div>
-      <div class="quote">“The new system was promised years ago. <strong>We are still waiting.</strong>”</div>
-      <div class="quote">“Someone spends two or three days every month preparing this report.”</div>
-      <div class="quote">“We know what is wrong. <strong>We just need someone to help us fix it.</strong>”</div>
-      <div class="quote">“We already tried something, but <strong>it didn't solve the real problem.</strong>”</div>
-      <div class="quote">“There is a better way. <strong>Nobody has time to work it out.</strong>”</div>
+      
+
+
+
+
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+   position: relative;
+  line-height: 1.2;
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      IT is not prioritising our issue.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+        They say our problem is not relevant enough. When they finally get to it, they ask for endless specifications. 
+        Weeks of explaining. Months of building. 
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+          And after all that - it doesn't even solve the main thing.
+        </strong>
+</div>
+
+
+
+
+
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+  position: relative;
+  line-height: 1.2;
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      The new system was promised years ago.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+        We were told it would transform everything. 
+        We planned around it. 
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+          Year later we are still waiting while the old system is falling apart.
+        </strong>
+</div>
+
+
+
+
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+  line-height: 1.2; 
+  position: relative;
+
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      Someone spends two or three days every month preparing this report.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+          Copying and pasting from spreadsheets. 
+          Manually checking every number. 
+          Chasing people for missing data
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+            Two or three days. Every single month. That's weeks of wasted time every year..
+        </strong>
+</div>
+
+
+
+
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+  line-height: 1.2; 
+  position: relative;
+
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      We know what is wrong, but we can't solve it alone.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+        We've identified the problem. We've documented everything. 
+        We've even suggested solutions. 
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+          We just need someone to help us fix it. Instead, we keep getting told it's "not a priority."
+        </strong>
+</div>
+
+
+
+
+      
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+  line-height: 1.2; 
+  position: relative;
+
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      We already tried something, but it didn't solve the real problem.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+        We spent time. We spent money. We got excited about the possibilities.
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+          But it didn't solve the real problem. It fixed a symptom, not the cause. And now we're back where we started.
+        </strong>
+</div>
+
+
+
+<div class="quote" style="
+  background: #f7f7f7
+  border: none; 
+  border-left: 6px solid #1565c0; 
+  border-radius: 17px; 
+  padding: 15px 20px; 
+  box-shadow: 0 8px 24px rgba(21,101,192,0.12);
+  text-align: left; 
+  line-height: 1.2; 
+  position: relative;
+
+">
+  <!-- Quotation mark and text on same line -->
+  <div style="display: flex; align-items: baseline; gap: 0;">
+    <span style="
+      font-size: 42px; 
+      color: #1565c0; 
+      line-height: 1; 
+      opacity: 0.3;
+      font-family: Georgia, serif;
+      margin-right: 2px;
+    ">❝</span>
+    
+    <strong style="font-size: 25px; color: var(--blue);">
+      There is a better way. Nobody has time to work it out.
+    </strong>
+  </div>
+  
+  <span style="font-weight: 400; display: block; margin-top: 8px; font-style: normal; color: #1a3a4a;font-size:15px;  line-height: 1.3; ">
+      <span style="font-weight:400;display:block;margin-top:6px;font-size:15px">
+        We can see it. We know it exists. We've even sketched out how it could work. 
+        <strong style="color:#c62828;display:block;margin-top:6px;">
+          But nobody has time to work it out. We're too busy fighting fires to prevent them.
+        </strong>
+</div>
+
+      
+
+
+
     </div>
+    
+    <p class="section-intro">
+
+        <span style="font-size: 22px; margin-right: 18px;"></span>
+      
+      <strong style="font-size: 25px;">Does this sound familiar?</strong>
+    </p>
+
+
+
   </div>
 </section>
 
 
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A new approach to solving operational problems</title>
+<style>
+:root{--navy:#12304a;--green:#2f8f68;--light:#eef6fb;--line:#d7e3ea;--muted:#647582}
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;color:#243746;margin:0;background:#fff;line-height:1.5}
+.wrap{max-width:1160px;margin:auto;padding:64px 24px}
+h1{color:var(--navy);font-size:42px;line-height:1.1;margin:0 0 16px}
+.lead{font-size:19px;max-width:940px;color:#526572;margin:0 0 42px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 0 58px}
+.card{border:1px solid var(--line);border-radius:16px;padding:22px}
+.card.ours{border:2px solid var(--green);background:#eaf7f0}
+.card h2{margin:0 0 8px;color:var(--navy);font-size:21px}
+.card p{margin:0;color:#647582}
+.card .path{margin-top:17px;font-weight:bold;color:var(--navy)}
+
+.timeline{background:var(--light);border-radius:18px;padding:30px;margin-bottom:58px}
+.timeline h2,.chartbox h2{color:var(--navy);font-size:28px;margin:0 0 8px}
+.subtitle{color:var(--muted);margin:0 0 28px}
+
+/* Comparison table: first two columns remain descriptive; third is a visual path/timeline. */
+.compare{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff}
+.compare th{text-align:left;background:#f7fafc;color:var(--navy);font-size:16px;padding:15px;border-bottom:1px solid var(--line)}
+.compare td{padding:15px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+.compare tr:last-child td{border-bottom:0}
+.compare .approach{font-weight:700;color:var(--navy);width:5%}
+.compare .optimized{width:28%;color:#536774}
+.compare .visual{width:55%}
+
+.mini-chart{position:relative;height:92px;min-width:390px}
+.axis{position:absolute;left:0;right:0;bottom:9px;height:2px;background:#c7d5dc}
+.bar{position:absolute;left:0;bottom:9px;height:50px;border-radius:7px;display:flex;align-items:center;white-space:nowrap;padding:0 10px;color:#fff;font-size:16px;font-weight:700}
+.bar.big{width:88%;background:#708798}
+.bar.it{width:77%;background:#507a98}
+.bar.spec{width:25%;background:#7297ad}
+.bar.ours{width:8%;min-width:74px;background:var(--green)}
+.path-text{position:absolute;left:0;top:3px;color:var(--navy);font-size:15px;font-weight:700;white-space:nowrap}
+.duration{position:absolute;right:0;bottom:39px;color:var(--navy);font-size:15px;font-weight:800;white-space:nowrap}
+.ours-row{background:#f4fbf7}
+
+.compare tr.ours-row td {
+    border-bottom: 2px solid #2f8f68;
+}
+
+.compare tr.ours-row td:first-child {
+    border-left: 2px solid #2f8f68;
+}
+
+.compare tr.ours-row td:last-child {
+    border-right: 2px solid #2f8f68;
+}
+
+.compare tr.ours-row td {
+    border-top: 2px solid #2f8f68;
+}
+
+.compare tr.ours-row td:first-child {
+    border-bottom-left-radius: 13px;
+}
+
+.compare tr.ours-row td:last-child {
+    border-bottom-right-radius: 13px;
+}
+
+.note{font-size:12px;color:var(--muted);margin:18px 0 0}
+
+/* Scatter plot retained below the table. */
+.chartbox{border:1px solid var(--line);border-radius:18px;padding:30px;background:#fff}
+.scatter{position:relative;max-width:820px;aspect-ratio:1.6;margin:35px auto 58px;border-left:2px solid #9db0bd;border-bottom:2px solid #9db0bd;background:
+linear-gradient(to right,transparent 24.8%,#e8eef2 25%,transparent 25.2%,transparent 49.8%,#e8eef2 50%,transparent 50.2%,transparent 74.8%,#e8eef2 75%,transparent 75.2%),
+linear-gradient(to top,transparent 24.8%,#e8eef2 25%,transparent 25.2%,transparent 49.8%,#e8eef2 50%,transparent 50.2%,transparent 74.8%,#e8eef2 75%,transparent 75.2%)}
+.dot{position:absolute;width:28px;height:28px;border-radius:50%;background:#607d8b;border:3px solid #fff;box-shadow:0 1px 5px #0002;transform:translate(-50%,50%)}
+.dot span{position:absolute;left:30px;top:-9px;white-space:nowrap;background:#fff;border:1px solid var(--line);border-radius:7px;padding:4px 8px;font-size:20px;font-weight:700;color:var(--navy)}
+.dot.ours{width:34px;height:34px;background:var(--green)}
+
+.axisx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    color: #647582;
+}
+
+.axisy {
+    position: absolute;
+    left: -35px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--muted);
+}
+
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+.principle{background:var(--light);border-radius:14px;padding:20px;color:var(--muted)}
+.principle strong{display:block;color:var(--navy);font-size:18px;margin-bottom:5px}
+
+@media(max-width:850px){
+ .grid,.principles{grid-template-columns:1fr}
+ .timeline{overflow-x:auto}
+ .compare{min-width:850px}
+ .timeline{padding:24px}
+}
+</style>
+</head>
+<body>
+<section id="approach" class="wrap">
+
+<section class="section blue">
+
+    <h2>A new approach to solving operational problems</h2>
+  
+
+<p class="lead">
+Large consultancies understand and advise at scale. IT manages technology at scale. Specialists solve narrow technical tasks.
+<strong>We combine business understanding with practical technical execution</strong> — working directly with the people doing the work to turn a painful problem into a working improvement.
+</p>
+
+
+
+<div class="timeline">
+<h1>How quickly does something useful appear?</h1>
+<p class="subtitle">The first two columns explain the focus. The visual shows the typical path and the relative time involved.</p>
+
+<table class="compare">
+<thead>
+<tr>
+<th>Provider</th>
+<th>What it is optimized for</th>
+<th>Typical approach & indicative duration</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td class="approach">Large<br>consultancy</td>
+<td class="optimized">Understand the business, analyze the situation and advise management at scale.</td>
+<td class="visual">
+  <div class="mini-chart">
+    <div class="path-text">Discover → Analyze → Recommend → Decide → Implement</div>
+    <div class="bar big"> </div>
+    <div class="duration">12–16<br>weeks</div>
+    <div class="axis"></div>
+  </div>
+</td>
+</tr>
+
+<tr>
+<td class="approach">IT</td>
+<td class="optimized">Manage technology, systems and the IT roadmap.</td>
+<td class="visual">
+  <div class="mini-chart">
+    <div class="path-text">Request → Specify → Prioritize → Develop → Release</div>
+    <div class="bar it"> </div>
+    <div class="duration">8–16+<br>weeks</div>
+    <div class="axis"></div>
+  </div>
+</td>
+</tr>
+
+<tr>
+<td class="approach">Specialist</td>
+<td class="optimized">Solve a defined technical or analytical task.</td>
+<td class="visual">
+  <div class="mini-chart">
+    <div class="path-text">Task → Build → Deliver</div>
+    <div class="bar spec"> </div>
+    <div class="duration">1–4<br>weeks</div>
+    <div class="axis"></div>
+  </div>
+</td>
+</tr>
+
+<tr class="ours-row">
+<td class="approach">Our<br>approach</td>
+<td class="optimized"><strong>Take a painful business problem and rapidly turn it into a working improvement with the people doing the work.</strong></td>
+<td class="visual">
+  <div class="mini-chart">
+    <div class="path-text">Problem → Prototype → Feedback → Improve → Result</div>
+    <div class="bar ours"></div>
+    <div class="duration">10<br>days*</div>
+    <div class="axis"></div>
+      </div>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<p class="note">
+*Indicative positioning, not a benchmark of every provider. <br>
+The first prototype and potential presented in 2-3 when the problem, people and data are ready.
+The full 10-working-day engagement can continue beyond the first prototype.
+</p>
+</div>
+
+
+<div class="principles">
+  <div class="principle"><strong>Senior</strong>You work directly with the person doing the work.</div>
+  <div class="principle"><strong>Focused</strong>One important problem, not a huge transformation programme.</div>
+  <div class="principle"><strong>Practical</strong>We build and test rather than stop at recommendations.</div>
+  <div class="principle"><strong>Fast</strong> The first useful prototype can arrive in days, not weeks.</div>
+</div>
+
+<div class="principles">
+
+</div>
+
+<div class="chartbox">
+  
+<h1>Where our approaches sit</h1>
+<p class="subtitle">We combine enough business context to understand the problem with enough technical capability to build and test a solution.</p>
+
+<div class="scatter">
+  <div class="axisy"> 
+    <span>Narrow technical task &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Business context understood <span>
+  </div>
+    
+    
+  <div class="axisx">    <span>Recommendations</span>    <span>Implementation</span> </div>
+  <div class="dot" style="left:34%;bottom:78%"><span>Large consultancy<br>(12-16 weeks)</span></div>
+  <div class="dot" style="left:68%;bottom:47%"><span>IT<br> (8-16 weeks)</span></div>
+  <div class="dot" style="left:80%;bottom:22%"><span>Specialist<br>(1-4 weeks)</span></div>
+  <div class="dot ours" style="left:76%;bottom:68%"><span>Our approach<br>(10 days*)</span></div>
+</div>
+
+<p class="note">Conceptual positioning to explain our focus — not a claim that every provider fits exactly in one place.</p>
+</div>
+
+
+</section>
+</body>
+</html>
+
+
+
+
 <section id="cases" class="section blue-bg">
   <div class="wrap">
-    <h2>Get progress. Improve what matters.</h2>
+    <h2>A track record of solving problems like yours</h2>
     <p class="section-intro">
       A few examples of the kind of work we can do. The common thread is not the technology.
       It is finding a painful problem and making useful progress with the people who own the work.
@@ -427,6 +988,81 @@ section:has(h2:first-child) .good-look-inner {
 
 
 
+<section id="offer" class="section">
+  <div class="wrap offer">
+    <div>
+      <h2>Test the fit. See the proof. Scale up.</h2>
+
+
+      <p class="section-intro">
+        <strong>First, let's see if PEAK is right for you.</strong>
+      </p>
+
+      <p class="section-intro">
+        <strong>Have you got a problem worth solving?</strong>
+      </p>
+
+ 
+
+      <p class="section-intro">
+        1. Tell us about it -> <br>  2. Have a short conversation -> <br>  3. Decide together if the engagement makes sense -> 
+      </p>
+
+
+           <p class="section-intro">
+        <strong>No commitment to start.</strong>
+      </p>
+<a class="btn primary" data-tally-link href="#contact" style="width:30%; display: block; box-sizing: border-box; text-align: center;">
+  
+  Brief us
+  
+</a>
+
+     <p class="section-intro">
+        We’ll look at the problem before the call, so we can spend our time discussing potential approaches rather than explaining the situation from scratch.
+      </p>
+
+   <p class="section-intro">
+        If it looks suitable and you are ready, we can start a few days after the call.
+      </p>
+
+
+      <p class="section-intro">
+        <strong>If not, we'll be honest and say no.</strong>
+      </p>
+
+
+
+
+  
+    </div>
+
+    <div class="offer-box">
+      <div class="offer-price">PEAK</div>
+      <div class="section-intro" style="color:var(--blue); line-height: 0.3;">
+        <strong>Practical Execution & Acceleration Kit</strong>
+      </div>
+            <div class="section-intro"style= line-height: 1.2;
+            ><br> <strong>10 days I 8.000 € <br> focused starting engagement</strong> </div> 
+
+            
+
+      <div class="section-intro"><br><strong>Scope</strong> <br>One concrete business problem.</div>
+      <div class="section-intro"><strong>People</strong> <br> Your people work with directly</div>
+
+      <div class="section-intro"  ><br><strong>Days 1–3</strong> <br>Understand & build the first prototype. Prove concept & identify potential. </div>
+      <div class="section-intro"><strong>Days 4–9</strong>  <br> Improve, implement & teach. </div>
+      <div class="section-intro"><strong>Day 10</strong> <br> Results & decide what's next.</div>
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
 
 
 <section id="how" class="section dark">
@@ -436,38 +1072,21 @@ section:has(h2:first-child) .good-look-inner {
       People are much better at reacting to something concrete than specifying the perfect solution beforehand.
       So we show something, listen, improve it and test it again.
     </p>
-    <div class="fair" style="margin-top:28px;padding:28px 32px;background:linear-gradient(135deg,#17304f,#245ea8)">
-      <h3 style="margin:0 0 8px;font-size:27px">Progress is a team sport.</h3>
-      <p style="margin:0;color:#e3edf8;max-width:850px">We bring experience, an outside perspective and the ability to develop practical solutions. Your people explain how the work really happens, what they want to improve and where the pain points are. Together, we test ideas, build prototypes and improve processes.<br><strong>Your knowledge + our skills + a shared focus on solutions.</strong></p>
-    </div>
 
-    <div class="process">
-      <div class="step">
-        <div class="step-num">01 · Start</div>
-        <h3>Understand the problem</h3>
-        <p>Talk to the manager and the people doing the work. Inspect the real files, data and process.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02 · Prototype</div>
-        <h3>Build something real</h3>
-        <p>Often this is Excel. Sometimes it is a model, workflow, report or another practical solution.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03 · React</div>
-        <h3>Work with the user</h3>
-        <p>The person doing the job tries it. We listen, change it and make it useful in the real environment.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04 · Evidence</div>
-        <h3>Show the improvement</h3>
-        <p>Time, errors, manual work, quality, visibility or capability — whatever matters for the problem.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">05 · Decide</div>
-        <h3>Choose the next step</h3>
-        <p>Stop, improve further, or apply what we learned to a larger problem. You decide.</p>
-      </div>
-    </div>
+  <!-- Bulleted list -->
+  <ul style="list-style:disc;padding-left:25px;color:#e3edf8;margin-top:20px;max-width:850px;line-height:1.5;font-size:18px">
+    <li style="margin-bottom:10px">It is difficult to discuss a problem when everyone is describing it differently.</li>
+    <li style="margin-bottom:10px">A working prototype gives people something concrete to react to.</li>
+    <li style="margin-bottom:10px">The conversation moves from "What do you think would work?" to "What if we changed this?"</li>
+    <li style="margin-bottom:10px">People can see the idea, challenge it, improve it and start using it.</li>
+    <li style="margin-bottom:10px">That's why we aim to create something useful early — not a finished solution, but something real enough to learn from.</li>
+  </ul>
+
+    
+  <div class="fair" style="margin:0 0 8px;font-size:27px"><atrong>Your knowledge + our skills + a shared focus on solutions.</atrong></h3>
+  <p style="margin:0;color:#e3edf8;max-width:850px">We bring experience, an outside perspective and the ability to develop practical solutions. Your people explain how the work really happens, what they want to improve and where the pain points are. Together, we test ideas, build prototypes and improve processes.
+</div>
+
 
     <div class="anna">
       <div class="anna-box darkbox">
@@ -493,140 +1112,47 @@ section:has(h2:first-child) .good-look-inner {
 
 
 
-<section id="offer" class="section">
-  <div class="wrap offer">
-    <div>
-      <h2>Start small. See the progress. Decide what comes next.</h2>
-      <p class="section-intro">
-        You don't need to approve a six-month transformation programme to find out whether we can help.
-        Give us one concrete problem and let the work provide the evidence.
-      </p>
-      <p class="section-intro">
-        We can start tomorrow if the problem, people and data are ready. If they aren't, we'll tell you what is missing.
-      </p>
 
-      <div class="fair">
-        <h3>No long-term commitment.</h3>
-        <p>
-          If we discover that the opportunity isn't meaningful, the data isn't good enough,
-          or the problem cannot be solved under the current conditions, we will say so.
-          Start small, see the progress, and decide what comes next.
-        </p>
-      </div>
-    </div>
-
-    <div class="offer-box">
-      <div class="offer-price">€8k</div>
-      <div class="offer-meta">10 working days · focused starting engagement</div>
-      <ul>
-        
-        <li>One concrete business problem</li>
-        <li>Direct work with your people</li>
-        <li>Real data, files and process</li>
-        <li>Rapid practical prototype</li>
-        <li>Iterative feedback and improvement</li>
-        <li>Evidence of what changed</li>
-        <li>Clear options for what comes next</li>
-      </ul>
-      <br><br>
-<a class="btn primary" data-tally-link href="#contact" style="width:100%; display: block; box-sizing: border-box; text-align: center;">
-  <br>
-  How can we help you? →
-  <br><br>
-</a>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="wrap">
-    <h2>Excel may be the starting point. The improvement is the goal.
-<p style="font-size: 18px; line-height: 1.5; letter-spacing: normal; font-weight: 400;">
- Many of our first solutions are built in <strong>Excel</strong> — not because Excel is the end goal, but because it is often the fastest way to turn an idea into something people can test and improve.</p>
-<p style="font-size: 18px; line-height: 1.5; letter-spacing: normal; font-weight: 400;">
-If Excel is the right solution, we make it robust and easy to use. If the problem calls for something else, we help define what comes next.</p>
-<p style="font-size: 18px; line-height: 1.5; letter-spacing: normal; font-weight: 400;">
-We don't choose technology first. We choose the fastest practical way to improve the work.</strong></p>
-</h2>
-
-<div class="principles">
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">A</div>
-          <h3>Process</h3>
-        </div>
-        <p>We look at how the work actually happens and what should change around the tool.</p>
-      </article>
-
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">B</div>
-          <h3>Data</h3>
-        </div>
-        <p>We work in the messy details — integration, cleaning, mapping and reporting — when that is where the problem lives.</p>
-      </article>
-
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">C</div>
-          <h3>Tools</h3>
-        </div>
-        <p>Excel, automation, AI or another system can be used when it is the practical answer.</p>
-      </article>
-
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">D</div>
-          <h3>People</h3>
-        </div>
-        <p>We work with the people doing the job and help them move from repetitive manual work toward control and decisions.</p>
-      </article>
-
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">E</div>
-          <h3>Implementation</h3>
-        </div>
-        <p>We can stay involved and help implement the improvement rather than leaving you with a slide deck.</p>
-      </article>
-
-      <article class="principle">
-        <div style="display: flex; align-items: baseline; gap: 10px;">
-          <div class="icon">F</div>
-          <h3>Scope</h3>
-        </div>
-        <p>We expand gradually. A successful small project can become a larger improvement programme — but only when it makes sense.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section id="contact" class="section blue-bg">
   <div class="wrap">
     <div class="form-wrap">
       <div>
-        <span class="eyebrow">Start small</span>
-        <h2 style="margin-top:20px">How can we help you?</h2>
+
+        <h2 style="margin-top:20px">Small starts. Big endings. Large smiles.</h2>
         <p class="section-intro">
-          No long specification. No long proposal. Give us enough context to understand what is getting in the way, who is affected and what you have already tried.
+          No long specification. No long proposal. 
         </p>
+
         <p class="section-intro">
-          We will look at the problem before the call so we can spend the conversation discussing how to solve it.
+          <strong>Give us enough context to understand what is getting in the way, who is affected and what you have already tried.</strong>
+        </p>
+
+        <p class="section-intro">
+          We will look at the problem before the call so we can spend the conversation discussing <strong>how to solve it.</strong>
         </p>
 
         <p class="section-intro">
           Progress is a team sport. 
         </p>
 
-        <div class="fair" style="margin-top:28px">
-          <h3>Then we decide together.</h3>
-          <p>
-            If the problem looks suitable, we can start with the focused €8k engagement. If it does not, we will tell you.
-            You do not need to commit to a larger project to find out.
-          </p>
-        </div>
+        <p class="section-intro">
+          If the problem looks suitable, we can start with a <strong>Focused Improvement Engagement.</strong>
+        </p>
+
+        <p class="section-intro">
+          If it doesn't, we'll tell you.
+        </p>
+
+        <p class="section-intro">
+          <strong>You don't need to commit to a larger project to find out whether we can help.</strong>
+        </p>
+
+
+
+
+
+
       </div>
 
       <div class="form-card">
@@ -640,14 +1166,14 @@ We don't choose technology first. We choose the fastest practical way to improve
             <div class="icon">1</div>
             <h3>Tell us how we can help</h3>
           </div>
-          <p>Tell us, what you have tried and what is getting in the way.</p>
+          <p>Tell us what you have tried and what is getting in the way.</p>
         </div>
         <div class="principle" style="box-shadow:none;padding:22px;margin:0 0 18px;background:var(--pale)">
           <div style="display: flex; align-items: baseline; gap: 10px;">
             <div class="icon">2</div>
             <h3>Submit the brief</h3>
           </div>
-          <p>We will read your breif. No specification required.</p>
+          <p>We will read your brief. No specification required.</p>
         </div>
         <div class="principle" style="box-shadow:none;padding:22px;margin:0 0 24px;background:var(--pale)">
           <div style="display: flex; align-items: baseline; gap: 10px;">
@@ -657,7 +1183,7 @@ We don't choose technology first. We choose the fastest practical way to improve
           <p>You will be taken directly to the 30-minute booking page.</p>
         </div>
 
-        <a class="btn primary" data-tally-link href="#contact" style="width:100%">How can we help you? →</a>
+        <a class="btn primary" data-tally-link href="#contact" style="width:100%">Brief us →</a>
         <p class="form-note">
           The questionnaire is not a specification. It is simply enough context for us to understand the problem before we talk.
         </p>
@@ -670,7 +1196,7 @@ We don't choose technology first. We choose the fastest practical way to improve
 
 <footer>
   <div class="wrap">
-    © 2026 <span data-company-name>YOUR COMPANY</span> · Practical business improvement
+    © 2026 <span data-company-name>KVADRILIJON</span> · Practical business improvement
   </div>
 </footer>
 
